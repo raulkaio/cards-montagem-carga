@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<!-- saved from url=(0089)http://10.62.38.231:8080/roteirizador/roteirizacao/avancada/montagemCargaAutomatica.xhtml -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head id="j_idt2"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            
+            <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+            <meta name="apple-mobile-web-app-capable" content="yes"><link type="text/css" rel="stylesheet" href="css/theme.css"><link type="text/css" rel="stylesheet" href="css/RES_NOT_FOUND"><script type="text/javascript" src="js/jquery.js"></script><script type="text/javascript" src="js/jquery-plugins.js"></script><script type="text/javascript" src="js/RES_NOT_FOUND"></script><link type="text/css" rel="stylesheet" href="css/components.css"><script type="text/javascript" src="js/core.js"></script><script type="text/javascript" src="js/components.js"></script><link type="text/css" rel="stylesheet" href="css/core-layout.css"><link type="text/css" rel="stylesheet" href="css/animate.css"><link type="text/css" rel="stylesheet" href="css/modena-font.css"><link type="text/css" rel="stylesheet" href="css/ripple-effect.css"><link type="text/css" rel="stylesheet" href="css/perfect-scrollbar.css"><link type="text/css" rel="stylesheet" href="css/font-awesome.css"><link type="text/css" rel="stylesheet" href="css/modena-layout.css"><link type="text/css" rel="stylesheet" href="css/components.css(1).xhtml"><link type="text/css" rel="stylesheet" href="css/notificacao.css"><script type="text/javascript">if(window.PrimeFaces){PrimeFaces.settings.locale='pt_BR';}</script>
+        
+        <title>maxRoteirizador</title>
+        <link rel="icon" type="image/x-icon" href="http://10.62.38.231:8080/resources/imagens/entrega.ico"><script type="text/javascript" src="js/ripple-effect.js"></script><script type="text/javascript" src="js/perfect-scrollbar.js"></script><script type="text/javascript" src="js/layout.js"></script></head><body class="GrayModena" cz-shortcut-listen="true"><input type="hidden" name="j_idt9" value="br.com.maximasist.dominio.entidade.portal.Usuario@3c">
+
+    <div id="layout-topbar">
+        <a id="mobile-menu-button">
+            <span class="ButtonLine" id="ButtonLine1"></span>
+            <span class="ButtonLine" id="ButtonLine2"></span>
+            <span class="ButtonLine" id="ButtonLine3"></span>
+        </a>
+
+        <a id="logo"><img src="images/logo_maxmove_hor.png" class="Fleft">
+        </a>
+        <a id="logoEmpresa">
+        </a>
+
+
+        <a id="show-top-menu" class="ShowOnMobile ripplelink"><i class="icon-more_vert" id="active"></i><i class="icon-close DispNone" id="passive"></i> </a>
+
+        <ul id="top-menu">
+
+        	<li>
+                <a class="ripplelink" href="http://10.62.38.231:8080/roteirizador/dashboard.xhtml"><i class="fa fa-home" title="Home"></i> <span class="ShowOnMobile">Home</span></a>
+            </li>
+
+            <li>
+                <a class="ripplelink"><i class="icon-gps_fixed" title="Roteirização"></i> <span class="ShowOnMobile">Roteirização</span></a>
+                <ul>
+                <li><a href="http://10.62.38.231:8080/roteirizador/roteirizacao/montagemCarga.xhtml"><i class="icon-gps_fixed"></i> Roteirização</a></li>
+                    <li><a href="http://10.62.38.231:8080/roteirizador/pesquisa/regiaoEntrega.xhtml"><i class="fa fa-globe"></i> Região de Entrega (Rotas)</a></li>
+                    <li><a href="http://10.62.38.231:8080/roteirizador/pesquisa/regiao.xhtml"><i class="fa fa-globe"></i> Região de Entrega (Cidades)</a></li>
+                    <li><a href="http://10.62.38.231:8080/roteirizador/pesquisa/roteirizacaoCarregamento.xhtml"><i class="icon-gps_fixed"></i> Carregamentos Roteirizados</a></li>
+                </ul>
+            </li>
+               <li>
+                    <a class="ripplelink"><i class="fa fa-map-marker" title="Roteirização Avançada"></i> <span class="ShowOnMobile">Roteirização Avançada</span></a>
+                    <ul>
+                        <li><a class="ripplelink" href="http://10.62.38.231:8080/roteirizador/roteirizacao/avancada/index.xhtml"><i class="fa fa-map-marker" title="Roteirização Avançada"></i>Roteirização Avançada</a></li>
+                        <li><a href="http://10.62.38.231:8080/roteirizador/roteirizacao/avancada/montagemCargaAutomatica.xhtml"><i class="fa fa-play-circle"></i> Montagem de carga automatica</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="ripplelink" href="http://10.62.38.231:8080/roteirizador/roteirizacao/rotaVendedor.xhtml"><i class="icon-navigation" title="Roteirização de Vendedores"></i> <span class="ShowOnMobile">Roteirização Vendedores\</span></a>
+                </li>
+
+            <li>
+                <a class="ripplelink"><i class="icon-cog" title="Configurações"></i> <span class="ShowOnMobile">Configurações</span></a>
+                <ul>
+                    <li><a href="http://10.62.38.231:8080/roteirizador/parametro.xhtml"><i class="icon-settings"></i> Parâmetros</a></li>
+                    <li><a href="http://10.62.38.231:8080/roteirizador/pesquisa/usuario.xhtml"><i class="fa fa-user"></i> Usuários</a></li>
+                    	<li><a href="http://10.62.38.231:8080/roteirizador/importarLocalizacao.xhtml"><i class="icon-import_export"></i> Importar Localização ERP</a></li>
+                        <li><a href="http://10.62.38.231:8080/roteirizador/logoEmpresa.xhtml"><i class="fa fa-file-image-o"></i> Logo da Empresa</a></li>
+                        <li><a href="http://10.62.38.231:8080/roteirizador/configuracao/custoMontagem.xhtml"><i class="fa fa-dollar"></i> Custo de Montagem</a></li>
+
+                </ul>
+            </li>
+
+            <li>
+                <a class="ripplelink"><i class="icon-info_outline" title="Informações"></i> <span class="ShowOnMobile">Informações</span></a>
+                <ul>
+                   	<li><a href="http://10.62.38.231:8080/roteirizador/baseDados.xhtml"><i class="fa fa-database"></i> Base de Dados</a></li>
+                   	<li><a href="http://10.62.38.231:8080/roteirizador/validacaoMaplink.xhtml"><i class="fa fa-check"></i> Validação Maplink</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a class="ripplelink"><i class="icon-power" title="Sistema"></i> <span class="ShowOnMobile">Sistema</span></a>
+                <ul>
+                    <li><a href="http://10.62.38.231:8080/roteirizador/logout"><span class="Red"><i class="icon-vpn_key"></i> Sair</span></a></li>
+                </ul>
+            </li>
+
+        </ul>
+    </div>
+        
+        <div id="wrapper">
+            <div id="wrapperIndent">
+
+    <div class="Animated05 ps-container" id="layout-menu-cover">
+<form id="menuform" name="menuform" method="post" action="http://10.62.38.231:8080/roteirizador/roteirizacao/avancada/montagemCargaAutomatica.xhtml" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="menuform" value="menuform">
+<ul id="menuform:j_idt31" class="layout-menu ShadowEffect modena-menu"><li id="menuform:j_idt32" role="menuitem"><a class="menulink ripplelink" href="http://10.62.38.231:8080/roteirizador/pesquisa/carregamento.xhtml"><i class="icon-null"></i><i class="icon-local_shipping"></i>Carregamentos</a></li><li id="menuform:j_idt33" role="menuitem"><a class="menulink ripplelink" href="http://10.62.38.231:8080/roteirizador/pesquisa/centroDistribuicao.xhtml"><i class="icon-null"></i><i class="fa fa-building"></i>Centro de Distribuição</a></li><li id="menuform:j_idt34" role="menuitem"><a class="menulink ripplelink" href="http://10.62.38.231:8080/roteirizador/pesquisa/cliente.xhtml"><i class="icon-null"></i><i class="fa fa-male"></i>Clientes</a></li><li id="menuform:j_idt35" role="menuitem"><a class="menulink ripplelink" href="http://10.62.38.231:8080/roteirizador/pesquisa/veiculo.xhtml"><i class="icon-null"></i><i class="fa fa-automobile"></i>Veículos</a></li><li id="menuform:j_idt36" role="menuitem"><a class="menulink ripplelink" href="http://10.62.38.231:8080/roteirizador/pesquisa/rotaComplemento.xhtml"><i class="icon-null"></i><i class="fa fa-road"></i>Rotas</a></li><li id="menuform:j_idt37" role="menuitem"><a class="menulink ripplelink" href="http://10.62.38.231:8080/roteirizador/pesquisa/motorista.xhtml"><i class="icon-null"></i><i class="fa fa-user"></i>Motoristas</a></li></ul><script type="text/javascript">Modena.restoreMenuState();</script><input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:0" value="tXui9+88CyZU4tKzjm8i1MU9wIsokcHQoK/+/PqXigoJ56endHqZ5WvV5LhaqtyP0RBCWIb6ymEz00Esmh7pt8tMgJv//NdK4aCAjIhPH7Ro1p9YKb9pLT5VcejYPeSerOxh8sHYGQjqC653zcR4T//Gyw2Lm1tGFlQB/6LusXwbt/+mJTrDzqync3iO9AJkqjo5rLutXx5VZWVzotfQwDXIyninjG43HsNnJU/qebUTknQGVdarakd/IpZDZhGz/Tj+1y1Iw+mQ/yBLkU1XtVssBIQNbZF9QITtd2zVRC2i6myZtYhz7Qa3nAEr6sBKVWN8poQaGkqtCeH6m50du3a38TakZH8xoCXWY/FPivJOmIJn4HksIV3r5th59Xe2pIlrcI50c319KcZAIhZkJug612Wyo0V8r9saHAgvcPJa3kq4t27cV5UcDvRtvqA6ohKV6yP1Mg+WNvlrbSpyhuWwnCVuYWkZzSUeeb2oXiJ5YxSjs7+hOWF+qlp3AmZVX2QTfuQfvuXZXbDbBddcFLj/v/cBIT+2l+y4p8nIfFm16YFzBxjP5WcHkpbBbUDda/BB+ZHWy3NSkUWfoWkU+tamHhMGgIPHkQyp3lQtdYoHQRfdJ3BhZFg3iOqmKp0/Uv8csDwTKpWyXHyBacQgxrOLHsVIIzEnUWNHzJwBwgp9adpBlVo+MfXpGs2yTUNljOYf0wF6JkZ4mm28AeHgU1YQzoPPw+eLXEKpQi30dPNZwXnlHk7FCz1EaQtX8SyC6UvChHYYOeFovhStMTWsXz1FZM6tb/0boFO2hUhdRA5aK+vqpMPtbpMYaoeQkU5FSz3AcAXDBSsvYbKlNvlNVdGheFycgDokPXRd8Li42cq4SwuQtPJIwFE0jBQf3Yc73hecS2ce963/JPdNLhOq3+DOVqp+xhVemQ9RXgJsRQ3aQ52PR6UhD5JMER1f0Q0ppo3+Iv68CCGfGDYMKEGoWLEKijEuPB8I8mE73UG5s3bxwmYay2/s8Sn8qZkAYdHF83/TuWFEJ7+Odt22OSLgjNKyqSWwZ7ElCM9B97CBpdthfv0uRK9HUsQRM0bbgS34nkquNaJtGTGRj1F5LTdgDj73KCgfwlFKrvbyiNj8YP5xliqsYgAM4pI2YrQSTrhHKLFR+FLpcChS31qBOtJxsSKCRi+bk7hcyE9TWo47Jr+xFzLDcusLSzlr5SKMo51OaIOPa9UPTEZrsujR8qJm7nKxlFW29ptvUIbdfdpeyME=" autocomplete="off">
+</form>
+    <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px;"><div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div></div><div class="ps-scrollbar-y-rail" style="top: 0px; right: 3px;"><div class="ps-scrollbar-y" style="top: 0px; height: 0px;"></div></div></div>
+
+                <div id="layout-portlets-cover">
+                    <div class="Container96 Fnone MarAuto"><div id="messages" class="ui-messages ui-widget" aria-live="polite"></div>
+        <style type="text/css">
+            .ui-panelgrid td, .ui-panelgrid tr
+            {
+                border-style: none !important;
+                background-color: inherit !important;
+                color: white !important;
+            }
+            .cabecalho-panel-grid {
+                font-size: 16px;
+                color: white;
+            }
+            .label-titulo{
+                font-size: 14px;
+                color: white;
+            }
+            .label-valor {
+                font-size: 12px;
+                color: white;
+            }
+            .ui-datagrid .ui-panel .ui-panel-titlebar {
+                border-bottom: solid 1px #E0E0E0 !important;
+                background-color: #43A047;
+            }
+        </style>
+<form id="form" name="form" method="post" action="http://10.62.38.231:8080/roteirizador/roteirizacao/avancada/montagemCargaAutomatica.xhtml" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="form" value="form">
+<script id="form:j_idt44_s" type="text/javascript">$(function(){PrimeFaces.cw("Poll","widget_form_j_idt44",{id:"form:j_idt44",frequency:600,autoStart:true,fn:function(){PrimeFaces.ab({s:"form:j_idt44",f:"form",u:"form"});}});});</script>
+
+            <div class="Container100 ui-fluid">
+                <div class="ContainerIndent">
+                    <div class="Card ShadowEffect">
+                        <h2>Montagem de Carga Automatica</h2>
+                        <div class="Container100 Responsive100" align="right" style="margin-bottom: 20px;"><button id="form:j_idt48" name="form:j_idt48" type="button" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-left GreenButton button-responsive" style="width:150px;" onclick="window.open(&#39;/roteirizador/roteirizador/dashboard.xhtml&#39;,&#39;_self&#39;)" role="button" aria-disabled="false"><span class="ui-button-icon-left ui-icon ui-c fa fa-reply Fs16 White"></span><span class="ui-button-text ui-c">Voltar</span></button>
+                        </div><div id="form:entidadeTeste" class="ui-datagrid ui-widget" style="display: inline-block; border: none; width: 100%"><div id="form:entidadeTeste_content" class="ui-datagrid-content ui-widget-content ui-grid ui-grid-responsive"><div class="ui-grid-row"><div class="ui-datagrid-column ui-grid-col-3">
+                            <div class="ContainerIndent">
+                                <div class="Card ShadowEffect TexAlCenter">
+                                    <div class="Card ShadowEffect GreenBack SoftGreen TexAlCenter HoverEffect" style="border-radius: 4px; padding: 8px; margin-bottom: 5px;">
+                                        <div style="margin-bottom: 10px; margin-top: 5px;"><label id="form:entidadeTeste:0:j_idt51" class="ui-outputlabel ui-widget White">APARECIDA DE GOIANIA</label>
+                                        </div><hr id="form:entidadeTeste:0:j_idt53" class="ui-separator ui-state-default ui-corner-all">
+                                        <div style="margin-bottom: 0px; margin-top: 0px;"><label id="form:entidadeTeste:0:j_idt55" class="ui-outputlabel ui-widget cabecalho-panel-grid">Cenário Atual</label>
+                                        </div><div id="form:entidadeTeste:0:j_idt57" class="ui-panelgrid ui-widget White ui-panelgrid-blank" style="width: 100%; font-size: 10px; background-color:transparent;"><div id="form:entidadeTeste:0:j_idt57_content" class="ui-panelgrid-content ui-widget-content ui-grid ui-grid-responsive"><div class="ui-grid-row"><div class="ui-panelgrid-cell ui-grid-col-4"><table>
+<tbody>
+<tr>
+<td><label class="label-titulo">Peso(KG)</label></td>
+</tr>
+<tr>
+<td><label id="form:entidadeTeste:0:j_idt60" class="ui-outputlabel ui-widget label-valor">1.667,41</label></td>
+</tr>
+</tbody>
+</table>
+</div><div class="ui-panelgrid-cell ui-grid-col-4"><table>
+<tbody>
+<tr>
+<td><label id="form:entidadeTeste:0:j_idt62" class="ui-outputlabel ui-widget label-titulo">Volume(M³)</label></td>
+</tr>
+<tr>
+<td><label id="form:entidadeTeste:0:j_idt63" class="ui-outputlabel ui-widget label-valor">64,00</label></td>
+</tr>
+</tbody>
+</table>
+</div><div class="ui-panelgrid-cell ui-grid-col-4"><table>
+<tbody>
+<tr>
+<td><label id="form:entidadeTeste:0:j_idt65" class="ui-outputlabel ui-widget label-titulo">Valor(R$)</label></td>
+</tr>
+<tr>
+<td><label id="form:entidadeTeste:0:j_idt66" class="ui-outputlabel ui-widget label-valor">6.380,98</label></td>
+</tr>
+</tbody>
+</table>
+</div></div></div></div><hr id="form:entidadeTeste:0:j_idt67" class="ui-separator ui-state-default ui-corner-all">
+
+                                        <div style="margin-bottom: 0px; margin-top: 0px;"><label id="form:entidadeTeste:0:j_idt69" class="ui-outputlabel ui-widget cabecalho-panel-grid">Parâmetros para montagem</label>
+                                        </div><div id="form:entidadeTeste:0:j_idt71" class="ui-panelgrid ui-widget White ui-panelgrid-blank" style="width: 100%; font-size: 10px; background-color:transparent;"><div id="form:entidadeTeste:0:j_idt71_content" class="ui-panelgrid-content ui-widget-content ui-grid ui-grid-responsive"><div class="ui-grid-row"><div class="ui-panelgrid-cell ui-grid-col-4"><table class="ajusteBorda">
+<tbody>
+<tr>
+<td><label class="label-titulo">Peso(KG)</label></td>
+</tr>
+<tr>
+<td><label id="form:entidadeTeste:0:j_idt74" class="ui-outputlabel ui-widget label-valor">0,00</label></td>
+</tr>
+</tbody>
+</table>
+</div><div class="ui-panelgrid-cell ui-grid-col-4"><table class="ajusteBorda">
+<tbody>
+<tr>
+<td><label id="form:entidadeTeste:0:j_idt76" class="ui-outputlabel ui-widget label-titulo">Volume(M³)</label></td>
+</tr>
+<tr>
+<td><label id="form:entidadeTeste:0:j_idt77" class="ui-outputlabel ui-widget label-valor">0,00</label></td>
+</tr>
+</tbody>
+</table>
+</div><div class="ui-panelgrid-cell ui-grid-col-4"><table class="">
+<tbody>
+<tr>
+<td><label id="form:entidadeTeste:0:j_idt79" class="ui-outputlabel ui-widget label-titulo">Valor(R$)</label></td>
+</tr>
+<tr>
+<td><label id="form:entidadeTeste:0:j_idt80" class="ui-outputlabel ui-widget label-valor">3.900,00</label></td>
+</tr>
+</tbody>
+</table>
+</div></div></div></div>
+                                    </div>
+                                        <div class="Card" style=" padding: 5px;">
+                                            <h5>Valor</h5><div id="form:entidadeTeste:0:j_idt101" class="ui-progressbar ui-widget ui-widget-content ui-corner-all" role="progressbar" aria-valuemin="0" aria-valuenow="100" aria-valuemax="100"><div class="ui-progressbar-value ui-widget-header ui-corner-all" style="display:block;width:100%"></div><div class="ui-progressbar-label" style="display:block">163,61 %</div></div><table id="form:entidadeTeste:0:j_idt100" class="ui-panelgrid ui-widget" style="display: inline-block" role="grid"><tbody></tbody></table>
+                                        </div><hr id="form:entidadeTeste:0:j_idt103" class="ui-separator ui-state-default ui-corner-all"><button id="form:entidadeTeste:0:j_idt104" name="form:entidadeTeste:0:j_idt104" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only GreenButton" onclick="PrimeFaces.addSubmitParam(&#39;form&#39;,{&#39;rotaId&#39;:&#39;108&#39;});PrimeFaces.onPost();" title="Visualizar Carregamentos" type="submmit" role="button" aria-disabled="false"><span class="ui-button-icon-left ui-icon ui-c fa fa-th Fs16 White"></span><span class="ui-button-text ui-c">Visualizar Carregamentos</span></button>
+                                </div>
+                            </div></div><div class="ui-datagrid-column ui-grid-col-3">
+                            <div class="ContainerIndent">
+                                <div class="Card ShadowEffect TexAlCenter">
+                                    <div class="Card ShadowEffect GreenBack SoftGreen TexAlCenter HoverEffect" style="border-radius: 4px; padding: 8px; margin-bottom: 5px;">
+                                        <div style="margin-bottom: 10px; margin-top: 5px;"><label id="form:entidadeTeste:1:j_idt51" class="ui-outputlabel ui-widget White">ANAPOLIS</label>
+                                        </div><hr id="form:entidadeTeste:1:j_idt53" class="ui-separator ui-state-default ui-corner-all">
+                                        <div style="margin-bottom: 0px; margin-top: 0px;"><label id="form:entidadeTeste:1:j_idt55" class="ui-outputlabel ui-widget cabecalho-panel-grid">Cenário Atual</label>
+                                        </div><div id="form:entidadeTeste:1:j_idt57" class="ui-panelgrid ui-widget White ui-panelgrid-blank" style="width: 100%; font-size: 10px; background-color:transparent;"><div id="form:entidadeTeste:1:j_idt57_content" class="ui-panelgrid-content ui-widget-content ui-grid ui-grid-responsive"><div class="ui-grid-row"><div class="ui-panelgrid-cell ui-grid-col-4"><table>
+<tbody>
+<tr>
+<td><label class="label-titulo">Peso(KG)</label></td>
+</tr>
+<tr>
+<td><label id="form:entidadeTeste:1:j_idt60" class="ui-outputlabel ui-widget label-valor">236,29</label></td>
+</tr>
+</tbody>
+</table>
+</div><div class="ui-panelgrid-cell ui-grid-col-4"><table>
+<tbody>
+<tr>
+<td><label id="form:entidadeTeste:1:j_idt62" class="ui-outputlabel ui-widget label-titulo">Volume(M³)</label></td>
+</tr>
+<tr>
+<td><label id="form:entidadeTeste:1:j_idt63" class="ui-outputlabel ui-widget label-valor">3,00</label></td>
+</tr>
+</tbody>
+</table>
+</div><div class="ui-panelgrid-cell ui-grid-col-4"><table>
+<tbody>
+<tr>
+<td><label id="form:entidadeTeste:1:j_idt65" class="ui-outputlabel ui-widget label-titulo">Valor(R$)</label></td>
+</tr>
+<tr>
+<td><label id="form:entidadeTeste:1:j_idt66" class="ui-outputlabel ui-widget label-valor">2.162,70</label></td>
+</tr>
+</tbody>
+</table>
+</div></div></div></div><hr id="form:entidadeTeste:1:j_idt67" class="ui-separator ui-state-default ui-corner-all">
+
+                                        <div style="margin-bottom: 0px; margin-top: 0px;"><label id="form:entidadeTeste:1:j_idt69" class="ui-outputlabel ui-widget cabecalho-panel-grid">Parâmetros para montagem</label>
+                                        </div><div id="form:entidadeTeste:1:j_idt71" class="ui-panelgrid ui-widget White ui-panelgrid-blank" style="width: 100%; font-size: 10px; background-color:transparent;"><div id="form:entidadeTeste:1:j_idt71_content" class="ui-panelgrid-content ui-widget-content ui-grid ui-grid-responsive"><div class="ui-grid-row"><div class="ui-panelgrid-cell ui-grid-col-4"><table class="ajusteBorda">
+<tbody>
+<tr>
+<td><label class="label-titulo">Peso(KG)</label></td>
+</tr>
+<tr>
+<td><label id="form:entidadeTeste:1:j_idt74" class="ui-outputlabel ui-widget label-valor">2.000,00</label></td>
+</tr>
+</tbody>
+</table>
+</div><div class="ui-panelgrid-cell ui-grid-col-4"><table class="ajusteBorda">
+<tbody>
+<tr>
+<td><label id="form:entidadeTeste:1:j_idt76" class="ui-outputlabel ui-widget label-titulo">Volume(M³)</label></td>
+</tr>
+<tr>
+<td><label id="form:entidadeTeste:1:j_idt77" class="ui-outputlabel ui-widget label-valor">1,00</label></td>
+</tr>
+</tbody>
+</table>
+</div><div class="ui-panelgrid-cell ui-grid-col-4"><table class="">
+<tbody>
+<tr>
+<td><label id="form:entidadeTeste:1:j_idt79" class="ui-outputlabel ui-widget label-titulo">Valor(R$)</label></td>
+</tr>
+<tr>
+<td><label id="form:entidadeTeste:1:j_idt80" class="ui-outputlabel ui-widget label-valor">0,00</label></td>
+</tr>
+</tbody>
+</table>
+</div></div></div></div>
+                                    </div>
+                                        <div class="Card" style=" padding: 5px;">
+                                            <h5>Peso</h5><div id="form:entidadeTeste:1:j_idt87" class="ui-progressbar ui-widget ui-widget-content ui-corner-all" role="progressbar" aria-valuemin="0" aria-valuenow="11" aria-valuemax="100"><div class="ui-progressbar-value ui-widget-header ui-corner-all" style="display:block;width:11%"></div><div class="ui-progressbar-label" style="display:block">11,81 %</div></div><table id="form:entidadeTeste:1:j_idt86" class="ui-panelgrid ui-widget" style="display: inline-block;" role="grid"><tbody></tbody></table>
+                                        </div>
+                                        <div class="Card" style=" padding: 5px;">
+                                            <h5>Volume</h5><div id="form:entidadeTeste:1:j_idt94" class="ui-progressbar ui-widget ui-widget-content ui-corner-all" role="progressbar" aria-valuemin="0" aria-valuenow="100" aria-valuemax="100"><div class="ui-progressbar-value ui-widget-header ui-corner-all" style="display:block;width:100%"></div><div class="ui-progressbar-label" style="display:block">300,00 %</div></div><table id="form:entidadeTeste:1:j_idt93" class="ui-panelgrid ui-widget" style="display: inline-block" role="grid"><tbody></tbody></table>
+                                        </div><hr id="form:entidadeTeste:1:j_idt103" class="ui-separator ui-state-default ui-corner-all"><button id="form:entidadeTeste:1:j_idt104" name="form:entidadeTeste:1:j_idt104" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only GreenButton" onclick="PrimeFaces.addSubmitParam(&#39;form&#39;,{&#39;rotaId&#39;:&#39;114&#39;});PrimeFaces.onPost();" title="Visualizar Carregamentos" type="submmit" role="button" aria-disabled="false"><span class="ui-button-icon-left ui-icon ui-c fa fa-th Fs16 White"></span><span class="ui-button-text ui-c">Visualizar Carregamentos</span></button>
+                                </div>
+                            </div></div><div class="ui-datagrid-column ui-grid-col-3">
+                            <div class="ContainerIndent">
+                                <div class="Card ShadowEffect TexAlCenter">
+                                    <div class="Card ShadowEffect GreenBack SoftGreen TexAlCenter HoverEffect" style="border-radius: 4px; padding: 8px; margin-bottom: 5px;">
+                                        <div style="margin-bottom: 10px; margin-top: 5px;"><label id="form:entidadeTeste:2:j_idt51" class="ui-outputlabel ui-widget White">ACREUNA</label>
+                                        </div><hr id="form:entidadeTeste:2:j_idt53" class="ui-separator ui-state-default ui-corner-all">
+                                        <div style="margin-bottom: 0px; margin-top: 0px;"><label id="form:entidadeTeste:2:j_idt55" class="ui-outputlabel ui-widget cabecalho-panel-grid">Cenário Atual</label>
+                                        </div><div id="form:entidadeTeste:2:j_idt57" class="ui-panelgrid ui-widget White ui-panelgrid-blank" style="width: 100%; font-size: 10px; background-color:transparent;"><div id="form:entidadeTeste:2:j_idt57_content" class="ui-panelgrid-content ui-widget-content ui-grid ui-grid-responsive"><div class="ui-grid-row"><div class="ui-panelgrid-cell ui-grid-col-4"><table>
+<tbody>
+<tr>
+<td><label class="label-titulo">Peso(KG)</label></td>
+</tr>
+<tr>
+<td><label id="form:entidadeTeste:2:j_idt60" class="ui-outputlabel ui-widget label-valor">430,50</label></td>
+</tr>
+</tbody>
+</table>
+</div><div class="ui-panelgrid-cell ui-grid-col-4"><table>
+<tbody>
+<tr>
+<td><label id="form:entidadeTeste:2:j_idt62" class="ui-outputlabel ui-widget label-titulo">Volume(M³)</label></td>
+</tr>
+<tr>
+<td><label id="form:entidadeTeste:2:j_idt63" class="ui-outputlabel ui-widget label-valor">4,00</label></td>
+</tr>
+</tbody>
+</table>
+</div><div class="ui-panelgrid-cell ui-grid-col-4"><table>
+<tbody>
+<tr>
+<td><label id="form:entidadeTeste:2:j_idt65" class="ui-outputlabel ui-widget label-titulo">Valor(R$)</label></td>
+</tr>
+<tr>
+<td><label id="form:entidadeTeste:2:j_idt66" class="ui-outputlabel ui-widget label-valor">2.292,70</label></td>
+</tr>
+</tbody>
+</table>
+</div></div></div></div><hr id="form:entidadeTeste:2:j_idt67" class="ui-separator ui-state-default ui-corner-all">
+
+                                        <div style="margin-bottom: 0px; margin-top: 0px;"><label id="form:entidadeTeste:2:j_idt69" class="ui-outputlabel ui-widget cabecalho-panel-grid">Parâmetros para montagem</label>
+                                        </div><div id="form:entidadeTeste:2:j_idt71" class="ui-panelgrid ui-widget White ui-panelgrid-blank" style="width: 100%; font-size: 10px; background-color:transparent;"><div id="form:entidadeTeste:2:j_idt71_content" class="ui-panelgrid-content ui-widget-content ui-grid ui-grid-responsive"><div class="ui-grid-row"><div class="ui-panelgrid-cell ui-grid-col-4"><table class="ajusteBorda">
+<tbody>
+<tr>
+<td><label class="label-titulo">Peso(KG)</label></td>
+</tr>
+<tr>
+<td><label id="form:entidadeTeste:2:j_idt74" class="ui-outputlabel ui-widget label-valor">1.000,00</label></td>
+</tr>
+</tbody>
+</table>
+</div><div class="ui-panelgrid-cell ui-grid-col-4"><table class="ajusteBorda">
+<tbody>
+<tr>
+<td><label id="form:entidadeTeste:2:j_idt76" class="ui-outputlabel ui-widget label-titulo">Volume(M³)</label></td>
+</tr>
+<tr>
+<td><label id="form:entidadeTeste:2:j_idt77" class="ui-outputlabel ui-widget label-valor">500,00</label></td>
+</tr>
+</tbody>
+</table>
+</div><div class="ui-panelgrid-cell ui-grid-col-4"><table class="">
+<tbody>
+<tr>
+<td><label id="form:entidadeTeste:2:j_idt79" class="ui-outputlabel ui-widget label-titulo">Valor(R$)</label></td>
+</tr>
+<tr>
+<td><label id="form:entidadeTeste:2:j_idt80" class="ui-outputlabel ui-widget label-valor">3.000,00</label></td>
+</tr>
+</tbody>
+</table>
+</div></div></div></div>
+                                    </div>
+                                        <div class="Card" style=" padding: 5px;">
+                                            <h5>Peso</h5><div id="form:entidadeTeste:2:j_idt87" class="ui-progressbar ui-widget ui-widget-content ui-corner-all" role="progressbar" aria-valuemin="0" aria-valuenow="43" aria-valuemax="100"><div class="ui-progressbar-value ui-widget-header ui-corner-all" style="display:block;width:43%"></div><div class="ui-progressbar-label" style="display:block">43,05 %</div></div><table id="form:entidadeTeste:2:j_idt86" class="ui-panelgrid ui-widget" style="display: inline-block;" role="grid"><tbody></tbody></table>
+                                        </div>
+                                        <div class="Card" style=" padding: 5px;">
+                                            <h5>Volume</h5><div id="form:entidadeTeste:2:j_idt94" class="ui-progressbar ui-widget ui-widget-content ui-corner-all" role="progressbar" aria-valuemin="0" aria-valuenow="0" aria-valuemax="100"><div class="ui-progressbar-value ui-widget-header ui-corner-all"></div><div class="ui-progressbar-label" style="display:block">0,80 %</div></div><table id="form:entidadeTeste:2:j_idt93" class="ui-panelgrid ui-widget" style="display: inline-block" role="grid"><tbody></tbody></table>
+                                        </div>
+                                        <div class="Card" style=" padding: 5px;">
+                                            <h5>Valor</h5><div id="form:entidadeTeste:2:j_idt101" class="ui-progressbar ui-widget ui-widget-content ui-corner-all" role="progressbar" aria-valuemin="0" aria-valuenow="76" aria-valuemax="100"><div class="ui-progressbar-value ui-widget-header ui-corner-all" style="display:block;width:76%"></div><div class="ui-progressbar-label" style="display:block">76,42 %</div></div><table id="form:entidadeTeste:2:j_idt100" class="ui-panelgrid ui-widget" style="display: inline-block" role="grid"><tbody></tbody></table>
+                                        </div><hr id="form:entidadeTeste:2:j_idt103" class="ui-separator ui-state-default ui-corner-all"><button id="form:entidadeTeste:2:j_idt104" name="form:entidadeTeste:2:j_idt104" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only GreenButton" onclick="PrimeFaces.addSubmitParam(&#39;form&#39;,{&#39;rotaId&#39;:&#39;117&#39;});PrimeFaces.onPost();" title="Visualizar Carregamentos" type="submmit" role="button" aria-disabled="false"><span class="ui-button-icon-left ui-icon ui-c fa fa-th Fs16 White"></span><span class="ui-button-text ui-c">Visualizar Carregamentos</span></button>
+                                </div>
+                            </div></div><div class="ui-datagrid-column ui-grid-col-3">
+                            <div class="ContainerIndent">
+                                <div class="Card ShadowEffect TexAlCenter">
+                                    <div class="Card ShadowEffect GreenBack SoftGreen TexAlCenter HoverEffect" style="border-radius: 4px; padding: 8px; margin-bottom: 5px;">
+                                        <div style="margin-bottom: 10px; margin-top: 5px;"><label id="form:entidadeTeste:3:j_idt51" class="ui-outputlabel ui-widget White">ARAGUAINA</label>
+                                        </div><hr id="form:entidadeTeste:3:j_idt53" class="ui-separator ui-state-default ui-corner-all">
+                                        <div style="margin-bottom: 0px; margin-top: 0px;"><label id="form:entidadeTeste:3:j_idt55" class="ui-outputlabel ui-widget cabecalho-panel-grid">Cenário Atual</label>
+                                        </div><div id="form:entidadeTeste:3:j_idt57" class="ui-panelgrid ui-widget White ui-panelgrid-blank" style="width: 100%; font-size: 10px; background-color:transparent;"><div id="form:entidadeTeste:3:j_idt57_content" class="ui-panelgrid-content ui-widget-content ui-grid ui-grid-responsive"><div class="ui-grid-row"><div class="ui-panelgrid-cell ui-grid-col-4"><table>
+<tbody>
+<tr>
+<td><label class="label-titulo">Peso(KG)</label></td>
+</tr>
+<tr>
+<td><label id="form:entidadeTeste:3:j_idt60" class="ui-outputlabel ui-widget label-valor">171,90</label></td>
+</tr>
+</tbody>
+</table>
+</div><div class="ui-panelgrid-cell ui-grid-col-4"><table>
+<tbody>
+<tr>
+<td><label id="form:entidadeTeste:3:j_idt62" class="ui-outputlabel ui-widget label-titulo">Volume(M³)</label></td>
+</tr>
+<tr>
+<td><label id="form:entidadeTeste:3:j_idt63" class="ui-outputlabel ui-widget label-valor">0,00</label></td>
+</tr>
+</tbody>
+</table>
+</div><div class="ui-panelgrid-cell ui-grid-col-4"><table>
+<tbody>
+<tr>
+<td><label id="form:entidadeTeste:3:j_idt65" class="ui-outputlabel ui-widget label-titulo">Valor(R$)</label></td>
+</tr>
+<tr>
+<td><label id="form:entidadeTeste:3:j_idt66" class="ui-outputlabel ui-widget label-valor">933,72</label></td>
+</tr>
+</tbody>
+</table>
+</div></div></div></div><hr id="form:entidadeTeste:3:j_idt67" class="ui-separator ui-state-default ui-corner-all">
+
+                                        <div style="margin-bottom: 0px; margin-top: 0px;"><label id="form:entidadeTeste:3:j_idt69" class="ui-outputlabel ui-widget cabecalho-panel-grid">Parâmetros para montagem</label>
+                                        </div><div id="form:entidadeTeste:3:j_idt71" class="ui-panelgrid ui-widget White ui-panelgrid-blank" style="width: 100%; font-size: 10px; background-color:transparent;"><div id="form:entidadeTeste:3:j_idt71_content" class="ui-panelgrid-content ui-widget-content ui-grid ui-grid-responsive"><div class="ui-grid-row"><div class="ui-panelgrid-cell ui-grid-col-4"><table class="ajusteBorda">
+<tbody>
+<tr>
+<td><label class="label-titulo">Peso(KG)</label></td>
+</tr>
+<tr>
+<td><label id="form:entidadeTeste:3:j_idt74" class="ui-outputlabel ui-widget label-valor">5.000,00</label></td>
+</tr>
+</tbody>
+</table>
+</div><div class="ui-panelgrid-cell ui-grid-col-4"><table class="ajusteBorda">
+<tbody>
+<tr>
+<td><label id="form:entidadeTeste:3:j_idt76" class="ui-outputlabel ui-widget label-titulo">Volume(M³)</label></td>
+</tr>
+<tr>
+<td><label id="form:entidadeTeste:3:j_idt77" class="ui-outputlabel ui-widget label-valor">0,00</label></td>
+</tr>
+</tbody>
+</table>
+</div><div class="ui-panelgrid-cell ui-grid-col-4"><table class="">
+<tbody>
+<tr>
+<td><label id="form:entidadeTeste:3:j_idt79" class="ui-outputlabel ui-widget label-titulo">Valor(R$)</label></td>
+</tr>
+<tr>
+<td><label id="form:entidadeTeste:3:j_idt80" class="ui-outputlabel ui-widget label-valor">0,00</label></td>
+</tr>
+</tbody>
+</table>
+</div></div></div></div>
+                                    </div>
+                                        <div class="Card" style=" padding: 5px;">
+                                            <h5>Peso</h5><div id="form:entidadeTeste:3:j_idt87" class="ui-progressbar ui-widget ui-widget-content ui-corner-all" role="progressbar" aria-valuemin="0" aria-valuenow="3" aria-valuemax="100"><div class="ui-progressbar-value ui-widget-header ui-corner-all" style="display:block;width:3%"></div><div class="ui-progressbar-label" style="display:block">3,44 %</div></div><table id="form:entidadeTeste:3:j_idt86" class="ui-panelgrid ui-widget" style="display: inline-block;" role="grid"><tbody></tbody></table>
+                                        </div><hr id="form:entidadeTeste:3:j_idt103" class="ui-separator ui-state-default ui-corner-all"><button id="form:entidadeTeste:3:j_idt104" name="form:entidadeTeste:3:j_idt104" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only GreenButton" onclick="PrimeFaces.addSubmitParam(&#39;form&#39;,{&#39;rotaId&#39;:&#39;301&#39;});PrimeFaces.onPost();" title="Visualizar Carregamentos" type="submmit" role="button" aria-disabled="false"><span class="ui-button-icon-left ui-icon ui-c fa fa-th Fs16 White"></span><span class="ui-button-text ui-c">Visualizar Carregamentos</span></button>
+                                </div>
+                            </div></div></div></div></div>
+                    </div>
+                </div>
+            </div><input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:1" value="CRPSQ5QZzitdQq3uTjiDaCKm0JZCzXRnVZrEleSiXzyuBaC5r/YYsNtTcObF6yFqztGxg0GF/9+pvmXDOk1qa+3R0jKC3GHwUMH+CqPITg639BOEvmMt9XsVlI41jpGuvknQEeDuPACBBrSpQAWaHm+F/aKlSGo4nCExm5BSF1T73gaoGhef+XNQ1LYeigF6F1IsX6rAiZZmmKsQnYRSt5u6X3w2NYeD/adUi5StAPBOiS5GKcoaqhBXMzscU5f0TVsUJOUcdOTiJlwNVsJ3qOw8D8+b7Tjprk+HCdwseG+3acZQ0WFKKyxcL9UcEH2K0gBI70Xi9MZyFTLJfYxcpAv8gNgs6LHXFfXK8qHl8qzKU+jEq9yQS6Vmw1SaSmVyf/cb1BBYon+Xokkubl4YWU7pW3lnmAtGUdxTlHY2DgJ/4i6mOO128r5s64AeouNNa9GXhu5sAZTX1uopsrp6iTAz1Co+uftcEDWPUrlLZ6DLvmfG0+1I2mwuZmsLRoldA+WcljNNd3A9Bjh0Svwr+DeMJUUYltxyXPWawzzsolc9n1Q2iIhHHtE06l3K5R2KDudhoEiBC5EPERcJe+tEtSIRA/iWd2qDrARkWUYzASq3C53MAXIlIwqL0AQG9ccc/11cr/ccqDH8uT/B+0aHw7/nOgx6M2yHTe0u9vvamnoEcTX1vn10G4m7KTA07s+eukt7D33C0Jt7RaQY+B/NpkF+IlgedUs394ub68PVEC5OMPXHylitkdWpYJprhGUydxmgbZDRgcD7Bwg2lgDP3cDU/fT/vg+BsRk7hlRkD39ElVaVZDMbTOnAA83qAB/RP/R4W7yUvKf7CPvtkCFkxTnw3KcSAh9Z7a8ZOMJ5BgdnZZNDVuknHVfmQ3rVXWs5HBXFohbi3FaJV+YtAygoIcsGoNhJVqLALhMyOGBkhFc+xK5IJijaTMDzuLR0Bu+VCX7/Bch8L/VR9N8Z935u3GR62QkMjN2l1vxdWdYGDTeCP+82QfPmvXmkoBlzRC9YnGyARQb/mRUOILDUp9A6PkqzUiJiivrWbuSaxjc08m+EJsHsl56mOWBgg5ZvW3abvJxuwPxwbTukpWdM2Nazbqx5Ue1xen/mNYTCWDEp/zrCZ8zEY+O5nsIvMxVh9qeWnkt1/oSIFX7IdCah4l/Cz3+/yLmADts4d2Qu/WbzclgAT2y1FDflpy/StVCXRDqabcIvu0lSrp0VbSFpdModPhFxUtOgfHClBA39MUEnIB4=" autocomplete="off">
+</form>
+
+                        <div class="Container100">
+                            <div class="ContainerIndent TexAlCenter Fs14 BoldGray"><img id="j_idt109" src="js/LogoMaxima.png.xhtml" alt=""><br>
+                                Copyright © 2008-2018. Máxima Sistemas. Todos os direitos reservados.
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div><div id="j_idt111" style="width:32px;height:32px;position:fixed;right:7px;bottom:7px"><div id="j_idt111_start" style="display:none"><img id="j_idt112" src="js/preloader.gif.xhtml" alt=""></div><div id="j_idt111_complete" style="display:none"></div></div>
+            </div>
+        </div>
+
+<div id="textarea_simulator" style="position: absolute; top: 0px; left: 0px; visibility: hidden;"></div><div id="j_idt40" class="ui-confirm-dialog ui-dialog ui-widget ui-widget-content ui-corner-all ui-shadow ui-hidden-container" role="dialog" aria-labelledby="j_idt40_title" aria-hidden="true" style="width: auto; height: auto;"><div class="ui-dialog-titlebar ui-widget-header ui-helper-clearfix ui-corner-top"><span id="j_idt40_title" class="ui-dialog-title"></span><a href="http://10.62.38.231:8080/roteirizador/roteirizacao/avancada/montagemCargaAutomatica.xhtml#" class="ui-dialog-titlebar-icon ui-dialog-titlebar-close ui-corner-all" aria-label="Close" role="button"><span class="ui-icon ui-icon-closethick"></span></a></div><div class="ui-dialog-content ui-widget-content" style="height: auto;"><span class="ui-icon ui-confirm-dialog-severity"></span><span class="ui-confirm-dialog-message"></span></div><div class="ui-dialog-buttonpane ui-dialog-footer ui-widget-content ui-helper-clearfix"><button id="j_idt41" name="j_idt41" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-left ui-confirmdialog-yes" type="button" role="button" aria-disabled="false"><span class="ui-button-icon-left ui-icon ui-c ui-icon-check"></span><span class="ui-button-text ui-c">SIM</span></button><button id="j_idt42" name="j_idt42" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon-left ui-confirmdialog-no" type="button" role="button" aria-disabled="false"><span class="ui-button-icon-left ui-icon ui-c ui-icon-close"></span><span class="ui-button-text ui-c">NÃO</span></button></div></div><div class="ui-dialog-docking-zone"></div></body></html>
